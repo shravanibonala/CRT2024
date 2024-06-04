@@ -1,11 +1,10 @@
 SUM OF 2 NUMBERS
 
 #include <stdio.h>
-int main()
+void main()
 {
     int a,b;
     scanf("%d%d",&a,&b);
     int sum=a+b;
     printf("%d",sum);
-    return 0;
 }
