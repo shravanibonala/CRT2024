@@ -1,6 +1,6 @@
 SUM OF 2 NUMBERS
 
-#include <stdio.h>
+#include<stdio.h>
 void main()
 {
     int a,b;
