@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=3;
+    switch(a)
+    {
+        case 1: printf("j");
+        break;
+        case 2:printf("p");
+        break;
+        case 3: printf("c");
+        break;    
+        default : printf("Invalid");
+        
+    }
+}
