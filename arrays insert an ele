@@ -78,14 +78,13 @@ int main() {
     {
         scanf("%d",&a[i]);
     }
-    scanf("%d",&p);
+    scanf("%d%d",&p,&ip);
     if(p>n)
     {
         printf("Invalid Input");
     }
     else
-    {
-        scanf("%d",&ip);      
+    {      
     for(i=0;i<p-1;i++)
     {
         printf("%d\n",a[i]);
