@@ -1,0 +1,75 @@
+The placement season has begun in a college. There are N number of students standing outside an interview room in a line. It is given that a person who goes in first has higher chances of getting selected. Each student has a number associated with them known as the problem-solving capability (PSC). The higher the capability, the higher the chances of selection. Now, each student wants to know the number of students ahead of him/her who have more problem-solving capability than him/her Find this number for each student.
+
+Input Format
+
+input1: An integer N, which denotes the number of students present.
+input2: An array of size N. denoting the problem-solving capability of the students.
+
+Constraints
+
+1<=10<=10^7
+
+Output Format
+
+Print output
+
+Sample Input 0
+
+6
+4 9 5 3 2 10
+Sample Output 0
+
+0 0 1 3 4 0
+Explanation 0
+
+The first student has no one ahead of him/her. So, the answer is 0.
+The second student has 9 greater than the first. So, the answer is 0.
+Third student: 9 is greater than 5. So, the answer is 1.
+Fourth student: 9, 4 and 5 are greater than 3. So, the answer is 3.
+Fifth student: 3, 5, 9 and 4 are greater than 2. So, the answer is 4.
+Sixth student: No one ahead has a greater PSC. So, the answer is 0.
+
+Sample Input 1
+
+5
+3 4 1 5 2
+Sample Output 1
+
+0 0 2 0 3
+Explanation 1
+
+There is no element before first element then 0
+Second element is greater than first element then 0
+Third element 1 is less than previous 2 elements that's why 2
+Fourth element 5 is greater than previous elements that's why 0
+Fifth element 2 is less than previos 3 elements that's whay 3
+
+CODE :
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,j,cnt=0;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        cnt=0;
+    for(j=0;j<=i;j++)
+    {
+        if(a[i]<a[j])
+        {
+            cnt++; 
+        }
+    }    
+        printf("%d ",cnt);
+    }
+    return 0;
+}
