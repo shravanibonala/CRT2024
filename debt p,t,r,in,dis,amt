@@ -53,3 +53,24 @@ int main() {
     printf("%.2f\n%.2f\n%.2f\n%.2f",in,amt,dis,final);
     return 0;
 }
+
+JAVA
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int p,r,t;
+        p=s.nextInt();
+        r=s.nextInt();
+        t=s.nextInt();
+        double i=(float)(p*t*r)/100;
+        double amt=(float)p+i;
+        double d=(float)(i*0.02);
+        double fin=(float)amt-d;
+        System.out.printf("%.2f\n%.2f\n%.2f\n%.2f",i,amt,d,fin);
+    }
+}
