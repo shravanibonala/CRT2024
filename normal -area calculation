@@ -46,7 +46,7 @@ Sample Output 2
 18
 78.50
 
-CODE :
+CODE : C
 
 #include <stdio.h>
 #include <string.h>
@@ -62,4 +62,26 @@ int main() {
     float a3=3.14*d*d;
     printf("%d\n%d\n%.2f",a1,a2,a3);
     
+}
+
+JAVA
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int a,l,b;
+        float r;
+        a=s.nextInt();
+        l=s.nextInt();
+        b=s.nextInt();
+        r=s.nextFloat();
+        int as=a*a;
+        int ar=l*b;
+        double ac=(3.14)*(r*r);
+        System.out.printf("%d\n%d\n%.2f",as,ar,(float)ac);
+    }
 }
