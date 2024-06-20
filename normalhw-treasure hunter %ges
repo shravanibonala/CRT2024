@@ -39,3 +39,25 @@ int main() {
     printf("%d\n%d\n%d",bensh,bbsh,pirsh);
     return 0;
 }
+
+
+JAVA :
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int nog,lben,bb;
+        nog=s.nextInt();
+        lben=s.nextInt();
+        bb=s.nextInt();
+        int sh_lben=nog*lben/100;
+        int rem_tres=nog-sh_lben;
+        int sh_bb=rem_tres*bb/100;
+        int sh_3pir=(nog-sh_lben-sh_bb)/3;
+            System.out.println(sh_lben+"\n"+sh_bb+"\n"+sh_3pir);
+    }
+}
