@@ -12,7 +12,7 @@ Output Format
 
 The output consists of 4 floating point values. The first value corresponds to the interest. The second corresponds to the amount. The third value corresponds to the discount. The last value corresponds to the final settlement. All floating point values are to be rounded off to two decimal places
 
-Sample Input 0
+Sample Input 0 
 
 100
 1
@@ -54,7 +54,7 @@ int main() {
     return 0;
 }
 
-JAVA
+JAVA :
 
 import java.io.*;
 import java.util.*;
