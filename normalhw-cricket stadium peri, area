@@ -36,3 +36,19 @@ int main() {
     printf("%d\n%d",peri,area);
     return 0;
 }
+
+JAVA :
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int l,b;
+        l=s.nextInt();
+        b=s.nextInt();
+        System.out.println(2*(l+b)+"\n"+l*b);
+    }
+}
