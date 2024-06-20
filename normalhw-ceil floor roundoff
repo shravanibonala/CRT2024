@@ -36,3 +36,19 @@ int main() {
     printf("%d\n%.1f\n%.1f",n1,ceil(n),floor(n));
     return 0;
 }
+
+
+JAVA :
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        float n;
+        n=s.nextFloat();
+        System.out.printf("%d\n%.1f\n%.1f",(int)n,Math.ceil(n),Math.floor(n));
+    }
+}
