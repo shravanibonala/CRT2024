@@ -44,7 +44,7 @@ int main() {
     printf("%d",pro);
     return 0;
 }
-
+ 
 JAVA :
 
 import java.io.*;
